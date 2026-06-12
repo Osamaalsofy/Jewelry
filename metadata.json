@@ -1,0 +1,6 @@
+{
+  "name": "Halo Atelier",
+  "description": "A luxury fine jewelry exhibition and bespoke design commission atelier, featuring GIA-certified diamonds, real-time precious metal pricing terminals, and custom artisan inquiry desks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

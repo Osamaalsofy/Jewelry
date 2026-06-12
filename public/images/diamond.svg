@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%" id="sparkling-diamond-vector">
+  <defs>
+    <!-- Background subtle glow shadow -->
+    <radialGradient id="ambient-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A88EFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#111112" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Metallic & diamond refractions -->
+    <linearGradient id="facet-white" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F2EFFF" />
+      <stop offset="100%" stop-color="#D5CFFF" />
+    </linearGradient>
+
+    <linearGradient id="facet-lilac" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2D9FF" />
+      <stop offset="100%" stop-color="#B29CFF" />
+    </linearGradient>
+
+    <linearGradient id="facet-blue" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80A3FF" />
+      <stop offset="100%" stop-color="#4F3BFF" />
+    </linearGradient>
+
+    <linearGradient id="facet-cyan" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A5FFF4" />
+      <stop offset="50%" stop-color="#E1F2FF" />
+      <stop offset="100%" stop-color="#9980FF" />
+    </linearGradient>
+
+    <linearGradient id="facet-dark" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#4D34C9" />
+      <stop offset="100%" stop-color="#1B1154" />
+    </linearGradient>
+
+    <linearGradient id="facet-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDCF" />
+      <stop offset="40%" stop-color="#FFD4F1" />
+      <stop offset="100%" stop-color="#9B70FF" />
+    </linearGradient>
+
+    <linearGradient id="facet-prism-1" x1="10%" y1="30%" x2="90%" y2="70%">
+      <stop offset="0%" stop-color="#FFDAFA" />
+      <stop offset="50%" stop-color="#D7E1FF" />
+      <stop offset="100%" stop-color="#B1FBF0" />
+    </linearGradient>
+
+    <linearGradient id="facet-prism-2" x1="90%" y1="10%" x2="10%" y2="90%">
+      <stop offset="0%" stop-color="#D4F0FF" />
+      <stop offset="50%" stop-color="#E8D1FF" />
+      <stop offset="100%" stop-color="#FFEED6" />
+    </linearGradient>
+
+    <!-- Star flare filter for extra sparkle effect -->
+    <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Backing -->
+  <circle cx="400" cy="400" r="320" fill="url(#ambient-glow)" />
+
+  <g transform="translate(0, 40)">
+    <!-- =========================================================================
+         PAVILION (BOTTOM HALF FACETS)
+         All converging to the bottom culet point (400, 640)
+         ========================================================================= -->
+    
+    <!-- Outer Left Pavilion -->
+    <polygon points="120,320 220,320 400,640" fill="url(#facet-blue)" opacity="0.9" />
+
+    <!-- Mid Left Pavilion -->
+    <polygon points="220,320 310,320 400,640" fill="url(#facet-prism-2)" opacity="0.95" />
+
+    <!-- Center Left Pavilion -->
+    <polygon points="310,320 400,320 400,640" fill="url(#facet-cyan)" />
+
+    <!-- Center Right Pavilion -->
+    <polygon points="400,320 490,320 400,640" fill="url(#facet-prism-1)" />
+
+    <!-- Mid Right Pavilion -->
+    <polygon points="490,320 580,320 400,640" fill="url(#facet-dark)" opacity="0.85" />
+
+    <!-- Outer Right Pavilion -->
+    <polygon points="580,320 680,320 400,640" fill="url(#facet-blue)" opacity="0.9" />
+
+    <!-- =========================================================================
+         CROWN (MIDDLE ROW FACETS)
+         Connecting the girdle (120->680 at Y:320) to the table corners at Y:180
+         ========================================================================= -->
+
+    <!-- Leftmost Triangle Corner -->
+    <polygon points="120,320 200,320 210,180" fill="url(#facet-dark)" opacity="0.9" />
+
+    <!-- Crown Left Upper Quadrant -->
+    <polygon points="210,180 200,320 300,320" fill="url(#facet-prism-1)" />
+    <polygon points="210,180 300,320 310,180" fill="url(#facet-gold)" />
+
+    <!-- Crown Center-Left Quadrant -->
+    <polygon points="310,180 300,320 400,320" fill="url(#facet-prism-2)" />
+    <polygon points="310,180 400,320 400,180" fill="url(#facet-white)" opacity="0.95" />
+
+    <!-- Crown Center-Right Quadrant -->
+    <polygon points="400,180 400,320 500,320" fill="url(#facet-cyan)" />
+    <polygon points="400,180 500,320 490,180" fill="url(#facet-prism-1)" />
+
+    <!-- Crown Right Upper Quadrant -->
+    <polygon points="490,180 500,320 600,320" fill="url(#facet-blue)" opacity="0.85" />
+    <polygon points="490,180 600,320 590,180" fill="url(#facet-gold)" />
+
+    <!-- Rightmost Triangle Corner -->
+    <polygon points="590,180 600,320 680,320" fill="url(#facet-dark)" opacity="0.95" />
+
+    <!-- =========================================================================
+         TABLE (TOP FLAT FACET)
+         Main horizontal octagon reflecting the light source
+         ========================================================================= -->
+    <polygon points="210,180 310,180 400,180 490,180 590,180 490,180 400,180 310,180" fill="url(#facet-white)" />
+    <!-- Segmented beautifully for realism -->
+    <polygon points="210,180 310,180 400,180 400,240 310,240 210,180" fill="url(#facet-prism-2)" opacity="0.3" />
+    <polygon points="590,180 490,180 400,180 400,240 490,240 590,180" fill="url(#facet-prism-1)" opacity="0.45" />
+
+    <!-- =========================================================================
+         LIGHT FLARING & HIGHLIGHTS
+         ========================================================================= -->
+    <!-- Star Flare 1 (Top Left Table Joint) -->
+    <g transform="translate(210, 180)" filter="url(#glow-filter)">
+      <ellipse cx="0" cy="0" rx="35" ry="4" fill="#FFFFFF" transform="rotate(-15)" />
+      <ellipse cx="0" cy="0" rx="4" ry="35" fill="#FFFFFF" transform="rotate(-15)" />
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF" />
+    </g>
+
+    <!-- Star Flare 2 (Far Right Crown edge) -->
+    <g transform="translate(590, 180)" filter="url(#glow-filter)">
+      <ellipse cx="0" cy="0" rx="25" ry="3" fill="#A5FFF4" transform="rotate(30)" />
+      <ellipse cx="0" cy="0" rx="3" ry="25" fill="#A5FFF4" transform="rotate(30)" />
+      <circle cx="0" cy="0" r="4" fill="#FFFFFF" />
+    </g>
+
+    <!-- Star Flare 3 (Bottom Tip Culet Reflection) -->
+    <g transform="translate(400, 640)" filter="url(#glow-filter)">
+      <ellipse cx="0" cy="0" rx="45" ry="5" fill="#E2D9FF" transform="rotate(45)" />
+      <ellipse cx="0" cy="0" rx="5" ry="45" fill="#E2D9FF" transform="rotate(45)" />
+      <circle cx="0" cy="0" r="7" fill="#FFFFFF" />
+    </g>
+
+    <!-- Edge Highlighting Overlays (to create perfect 3D definition) -->
+    <polyline points="120,320 400,640 680,320" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.4" />
+    <polyline points="210,180 400,180 590,180" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.75" />
+    <line x1="400" y1="180" x2="400" y2="640" stroke="#FFFFFF" stroke-width="1.5" opacity="0.3" />
+    <line x1="310" y1="320" x2="400" y2="640" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+    <line x1="490" y1="320" x2="400" y2="640" stroke="#FFFFFF" stroke-width="1.5" opacity="0.4" />
+  </g>
+</svg>

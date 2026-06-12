@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Almarai:wght@300;400;700;800&family=Black+Ops+One&family=Instrument+Serif:ital@0;1&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Prata&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/tt-norms-pro-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/tt-norms-pro-semibold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Libre Bodoni", "Libre Baskerville", "TT Norms Pro", serif;
+  --font-serif: "Instrument Serif", serif;
+  --font-display: "Black Ops One", cursive, system-ui;
+  --font-bodoni: "Libre Bodoni", serif;
+  --font-instrument: "Instrument Serif", serif;
+  --font-blackops: "Black Ops One", cursive, system-ui;
+
+  --color-primary-navy: #20303C;
+  --color-accent-purple: #4D33DE;
+  --color-accent-blue: #0000EE;
+  
+  --animate-marquee: marquee 22s linear infinite;
+  --animate-backers-marquee: backers-marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes backers-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+/* Base resets & typography */
+html, body {
+  font-family: var(--font-sans);
+  background-color: #F5F5F5;
+  color: #20303C;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  font-family: inherit;
+}
+
+/* Custom scrollbar styling to match the luxury aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A0A0;
+}
+
+/* Marquee tracking classes for infinite loops */
+.marquee-container {
+  overflow: hidden;
+  display: flex;
+  user-select: none;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
+}
+
+/* Glassmorphism overlays */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-glass-panel {
+  background: rgba(43, 38, 68, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
