@@ -13,39 +13,11 @@ Halo Atelier is an ultra-premium, high-craft digital exhibition and interactive 
 
 ---
 
-## 🚀 Easy GitHub Pages Deployment (Automated)
+## 🚀 Deployment Guide
 
-This repository comes pre-packaged with a **GitHub Actions CI/CD pipeline** at `.github/workflows/deploy.yml` that builds and deploys your website automatically to GitHub Pages.
+You can easily host Halo Atelier using any premium zero-config cloud platform. Because we removed the automatic GitHub Actions workflow triggers, your pushes will remain quiet and will not trigger automated build emails or notifications.
 
-### 📋 Setup Steps:
-1. **Create a GitHub Repository**:
-   - Go to your GitHub account and create a new repository (e.g., `halo-atelier`).
-2. **Push the Files to GitHub**:
-   - Initialize git in your local folder, commit all files, and push them to your new GitHub repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initialize Halo Atelier"
-   git branch -M main
-   git remote add origin https://github.com/your-username/halo-atelier.git
-   git push -u origin main
-   ```
-3. **Enable GitHub Pages**:
-   - On GitHub, navigate to your repository’s **Settings** tab.
-   - Scroll down to the Left sidebar and click **Pages**.
-   - Under **Build and deployment** -> **Source**, open the dropdown and select **GitHub Actions**.
-4. **Cinematic Live URL**:
-   - The workflow will automatically start compiling. You can watch it in the **Actions** tab of your repo.
-   - Once it finishes, your site will be live instantly at:
-     `https://<your-username>.github.io/<your-repo-name>/`
-
----
-
-## ⚡ Alternative Cloud Platforms (Zero Config)
-
-If you prefer to deploy to other popular free hosting systems, simply connect your GitHub repository and it will auto-detect the Vite build:
-
-### 🌟 Vercel
+### 🌟 Vercel (Recommended)
 1. Go to [Vercel.com](https://vercel.com) and click **Add New** -> **Project**.
 2. Connect your GitHub account and import your `halo-atelier` repository.
 3. Vercel automatically detects **Vite** as your preset. Click **Deploy**.
