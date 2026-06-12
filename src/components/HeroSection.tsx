@@ -267,16 +267,12 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onJoinUs }) => {
             <path d="M 360 96 Q 328 96 328 64 L 328 32 Q 328 0 296 0 L 0 0 L 0 96 Z" />
           </svg>
           <div className="relative z-40 flex items-center gap-6 h-24 pl-8 pr-12 pt-4">
-            <div>
-              <span className="block text-2xl font-serif font-black text-black tracking-tight leading-none">4.8K</span>
-              <span className="block text-[10px] font-bold text-black/60 uppercase tracking-widest mt-1 font-mono">Artisan Commissions</span>
-            </div>
             <button 
               id="bottom-left-join-guild-btn"
               onClick={onJoinUs}
               className="bg-black hover:bg-[#FFE071] text-white hover:text-black hover:scale-105 active:scale-95 transition-all duration-300 text-[11px] tracking-wider uppercase font-bold px-5 py-3 rounded-full flex items-center gap-1.5 shadow-md cursor-pointer"
             >
-              <span>Book Atelier Desk</span>
+              <span>Book a Trailer Desk</span>
               <span className="text-[10px] text-amber-300">✦</span>
             </button>
           </div>
