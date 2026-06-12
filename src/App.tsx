@@ -75,7 +75,7 @@ export default function App() {
           playsInline
           preload="auto"
           className="w-full h-full object-cover scale-102"
-          src="/videos/background.mp4"
+          src="videos/background.mp4"
         />
       </div>
 
@@ -111,7 +111,7 @@ export default function App() {
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover select-none pointer-events-none z-0"
-          src="/videos/BG.mp4"
+          src="videos/BG.mp4"
         />
 
         {/* Dynamic Inner Cinematic View Switcher */}

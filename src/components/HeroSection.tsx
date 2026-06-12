@@ -198,7 +198,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onJoinUs }) => {
             style={{ 
               filter: 'contrast(1.25) brightness(1.2) drop-shadow(0 25px 60px rgba(168, 142, 255, 0.25))',
             }}
-            src="/videos/Hero 0.webm"
+            src="videos/Hero 0.webm"
           />
         </div>
 

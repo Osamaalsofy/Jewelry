@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
           playsInline
           preload="auto"
           className="w-full h-full object-cover"
-          src="/videos/background.mp4"
+          src="videos/background.mp4"
         />
       </div>
 
